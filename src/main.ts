@@ -308,7 +308,7 @@ let gateItems: StoryItem[] = [
                 clear: false,
                 setState: () => {
                     domTerminal.clear();
-                    domTerminal.writeData(`At the exit, another man in a suit takes your card from you and gives you a choice to make.\n\nDo you want to me to convert your ${gateItems[11].state.points} points into cash and lose your money or do you want to keep your memories and continue?\n`);
+                    domTerminal.writeData(`At the exit, another man in a suit takes your card from you and gives you a choice to make.\n\n\"Do you want to me to convert your ${gateItems[11].state.points} points into cash and lose your money or do you want to keep your memories and continue?\"\n`);
                     return 12;
                 }
             }
@@ -340,7 +340,7 @@ let gateItems: StoryItem[] = [
     },
     {
         id: 13,
-        text: "\"Thank you for chosing your memories over monetary profit\", a voice echoes from above, \"The choice of morality over personal gain is one that humans struggle with, and you made the noble choice my friend.\". Looking up, you realize it is Ralph Waldo Emmerson Himself. \n\n\"To finish the moment, to find the journey's end in every step of the road, to live the greatest number of good hours, is wisdom.\"\n\n Welcome to the Land of Speech. Perhaps one of the most vital aspects of modern human rights is free speech. Here we analyze the importance of free speech and its opponents.\nWould you care to go on a stroll with me?\n",
+        text: "\"Thank you for choosing your memories over monetary profit\", a voice echoes from above, \"The choice of morality over personal gain is one that humans struggle with, and you made the noble choice my friend.\" Looking up, you realize it is Ralph Waldo Emmerson Himself. \n\n\"To finish the moment, to find the journey's end in every step of the road, to live the greatest number of good hours, is wisdom.\"\n\nWelcome to the Land of Speech. Perhaps one of the most vital aspects of modern human rights is free speech. Here we analyze the importance of free speech and its opponents.\nWould you care to go on a stroll with me?\n",
         options: [
             {
                 text: "yes",
@@ -355,7 +355,7 @@ let gateItems: StoryItem[] = [
         text: `As you strolled with Emmerson through the American country side. He explained his view on individualism to you.\n
 “It is easy in the world to live after the world's opinion; it is easy in solitude after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.”\n
 In other words, maintain your own opinions and always struggle to seperate yourself from the masses. There is no good in having the crowd take
-control of your opinions.
+control of your opinions."
 `,
         options: [
             {
@@ -369,7 +369,7 @@ control of your opinions.
     {
         id: 15,
         text:
-`You bid farewell to Emmerson and continue down your path to meet Langston Hughes in a house surrounded by a white picket fence,
+            `You bid farewell to Emmerson and continue down your path to meet Langston Hughes in a house surrounded by a white picket fence,
 with a chicken in a pan, and plenty of people inside. To your surprise, Langston Hughes was excluded from the table.
 
 "Why?", you ask Hughes.
@@ -400,7 +400,7 @@ And be ashamed—
 I, too, am America.
 
 
-"Listen", he says, they can't ignore us forever. We are an integral part of this nation. Our voices will be heard\n`,
+"Listen", he says, \"they can't ignore us forever. We are an integral part of this nation. Our voices will be heard\"\n`,
         options: [
             {
                 text: "continue",
@@ -413,13 +413,13 @@ I, too, am America.
     {
         id: 16,
         text:
-`On your way out of that unjust house you encounter James Baldwin, strolling through Brooklyn.
+            `On your way out of that unjust house you encounter James Baldwin, strolling through Brooklyn.
 \"I see you've met Hughes\", he tells you, \"it's been more than 30 years since he published that poem. We haven't made
-the progress that he prophesized. It\'s time to fight back.'\"
+the progress that he prophesized. It\'s time to fight back.\"
 
 \"Do you see all of this\", he exclaims gesturing at the white affluence, rape, and police cruelty.
 
-This system of oppression is too engrained in our society. They are crushing our lives and voices and we need to stick up for ourselves\n`,
+\"This system of oppression is too engrained in our society. They are crushing our lives and voices and we need to stick up for ourselves.\"\n`,
         options: [
             {
                 text: "continue",
@@ -428,10 +428,64 @@ This system of oppression is too engrained in our society. They are crushing our
                 clear: true
             }
         ]
+    },
+    {
+        id: 17,
+        text:
+            `On your way out, you trip and fall into a manhole and find yourself on a raft with Huckleberry Finn and Jim in The Land of Change.\n
+It becomes apparant that they are struggling to keep together in the strong current. After they are both
+swept away from the current, you fast forward to both of them on dry land, with Huck trying to convince Jim
+that it was all a dream.
+
+After Jim figured out that the whole thing was a lie, you hear Huck, a white, southern child apologize to Jim
+in a rare occurence of humanity.
+
+Perhaps there is hope for change.\n`,
+        options: [
+            {
+                text: "continue",
+                shortText: "c",
+                setState: () => 18,
+                clear: true
+            }
+        ]
+    },
+    {
+        id: 18,
+        text:
+            `Upon hearing this, you teleport to packed amphitheater, where Gerry Gambill is giving a speech on The Art of Stealing Human Rights
+
+"Encourage the Indian to take his case to court. This is very expensive, takes lots of time and energy and is very safe because laws are stacked against him. The court's ruling will defeat the Indian's cause, but makes him think he has obtained justice."
+
+You realize that this is a satirical piece and Gambill is speaking out against tactics used by the US government, among others, to take away others' human rights. You also realize the power that satirical writing can have on change.
+`,
+        options: [
+            {
+                text: "continue",
+                shortText: "c",
+                setState: () => 19,
+                clear: true
+            }
+        ]
+    },
+    {
+        id: 19,
+        text:
+        `Throughout this entire journey, you learned that America is a complex place. While some may characterize the place as full of good,
+or full of evil, the truth is more nuanced than that. Reading novels such as The Great Gatsby, we find that morality and character is valued
+more in American society than affluence. Another important aspect of American society is our dedicated to free speech: who speaks for us matters. We find this same theme in the land of change where we see the disparities and attempts to change them for the better.\n`,
+        options: [
+            {
+                text: "finish",
+                shortText: "f",
+                setState: () => -1,
+                clear: false
+            }
+        ]
     }
 ];
 
-let currentID = 9;
+let currentID = 0;
 let alreadyPrinted = false;
 function handleGame() {
     let currentState = gateItems[currentID];

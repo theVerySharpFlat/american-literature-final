@@ -48,7 +48,7 @@ export class DOMTerminal {
 
             setInterval(() => {
                 this.outputChar();
-            }, 1);
+            }, 30);
         }
     }
 
