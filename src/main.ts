@@ -52,7 +52,9 @@ let gateItems: StoryItem[] = [
     },
     {
         id: 1,
-        text: `Welcome to the Land of Humanity! As you walk through the gate, you see a little girl, standing under a replica of the statue of liberty, eerily warning you\r\n
+        text: `Welcome to the Land of Humanity! As you walk through the gate and past the Immigrant's gift shop (Buy American Flags, Apple Pie, Hot Dogs, English Books!), you see a little girl standing under a replica of the statue of liberty, which has the familiar poem \"The New Colossus\" by Emma Lazarus carved on it. In contrast to the positive tone of this poem, the little girl eerily warns you\r\n
+
+
     Prospective Immigrants Please Note
     Either you will
     go through this door
@@ -80,6 +82,8 @@ let gateItems: StoryItem[] = [
 
     The door itself makes no promises.
     It is only a door.
+
+    - Adrienne Rich
 \nDo you still want to enter?\r\n`,
         options: [
             {
@@ -92,7 +96,7 @@ let gateItems: StoryItem[] = [
     },
     {
         id: 2,
-        text: "Concerned, you move on. As you approach a building in the distance, you hear rumbling, not unlike thunder. Drawing near to this building, you make out the words on the sign \"RIP VAN WINKLE TAVERN\". You move into the Rip Van Winkle Tavern which is unsettlingly quiet yet full of giant people, all staring at you. A large hand offers you a tankard of something alcoholic.\n\nDo you drink?\n",
+        text: "Concerned, you move on. As you approach a building in the distance, you hear rumbling, not unlike thunder. Drawing near to this building, past Dame Van Winkle who is screaming at you to get out, you make out the words on the sign \"RIP VAN WINKLE TAVERN\". You move into the Rip Van Winkle Tavern which is unsettlingly quiet yet full of giant people, all staring at you. A large hand offers you a tankard of something alcoholic.\n\nDo you drink?\n",
         options: [
             {
                 text: "yes",
@@ -239,7 +243,7 @@ let gateItems: StoryItem[] = [
     },
     {
         id: 9,
-        text: "Welcome to THE LAND OF LIFE. OWNER: J. GATSBY\n\nIn front of you, you see a massive neon-lit building with blaring music, full of people.\nAt the door, a man dressed in a suit hands you a card\n\n\"This has unlimited money in it. It\'ll pay for food, drinks, and entertainment, you just can't take it outside\".\nHave fun!\n",
+        text: "Welcome to THE LAND OF LIFE. OWNER: J. GATSBY\n\nIn front of you, you see a massive neon-lit building with blaring music, full of people.\nAt the door, a man dressed in a suit hands you a card\n\n\"This has unlimited money in it. It\'ll pay for food, drinks, and entertainment, you just can't take it outside. You should check out the yellow car go cart races over there. If you are feeling lucky, you can go and talk to Wolfsheim over there and invest you hard earned money in some alcohol (as long as you don't tell the cops). And if you don't mind getting wet, you can check out Gatsby's pool!\"\nHave fun!\n",
         options: [
             {
                 shortText: "c",
@@ -340,7 +344,7 @@ let gateItems: StoryItem[] = [
     },
     {
         id: 13,
-        text: "\"Thank you for choosing your memories over monetary profit\", a voice echoes from above, \"The choice of morality over personal gain is one that humans struggle with, and you made the noble choice my friend.\" Looking up, you realize it is Ralph Waldo Emmerson Himself. \n\n\"To finish the moment, to find the journey's end in every step of the road, to live the greatest number of good hours, is wisdom.\"\n\nWelcome to the Land of Speech. Perhaps one of the most vital aspects of modern human rights is free speech. Here we analyze the importance of free speech and its opponents.\nWould you care to go on a stroll with me?\n",
+        text: "\"Thank you for choosing your memories over monetary profit\", a voice echoes from above, \"The choice of morality over personal gain is one that humans struggle with, and you made the noble choice my friend. According to Manaavi Singh, \'People got excited about both things and events. But they tended to feel more positive about experiential purchases, and their feelings about material purchases were more likely to be tinged with feelings of impatience.\'\" Looking up, you realize it is Walt Whitman Himself. \n\n\"Ralph Waldo Emmerson said it best \'To finish the moment, to find the journey's end in every step of the road, to live the greatest number of good hours, is wisdom.\'\"\n\nWelcome to the Land of Speech. Perhaps one of the most vital aspects of modern human rights is free speech. Here we analyze the importance of free speech and its opponents.\nWould you care to go on a stroll with me?\n",
         options: [
             {
                 text: "yes",
@@ -352,10 +356,10 @@ let gateItems: StoryItem[] = [
     },
     {
         id: 14,
-        text: `As you strolled with Emmerson through the American country side. He explained his view on individualism to you.\n
-“It is easy in the world to live after the world's opinion; it is easy in solitude after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.”\n
+        text: `As you strolled with Whitman through the American country side. He explained his view on individualism to you.\n
+“Emmerson also said \'It is easy in the world to live after the world's opinion; it is easy in solitude after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.\'”\n
 In other words, maintain your own opinions and always struggle to seperate yourself from the masses. There is no good in having the crowd take
-control of your opinions."
+control of your opinions.\n\n\"Instead, live in nature and appreciate yourself.\"\n\n
 `,
         options: [
             {
@@ -369,7 +373,7 @@ control of your opinions."
     {
         id: 15,
         text:
-            `You bid farewell to Emmerson and continue down your path to meet Langston Hughes in a house surrounded by a white picket fence,
+            `You bid farewell to Whitman and continue down your path to meet Langston Hughes in a house surrounded by a white picket fence,
 with a chicken in a pan, and plenty of people inside. To your surprise, Langston Hughes was excluded from the table.
 
 "Why?", you ask Hughes.
