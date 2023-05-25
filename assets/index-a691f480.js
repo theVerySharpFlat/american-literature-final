@@ -11,7 +11,9 @@ WARNING: This link could potentially be dangerous`)){const s=window.open();if(s)
   |  |__| |__     |     /\\  |\\ | |  \\    /  \\ |__     |__| |  |  |\\/|  /\\  |\\ | |  |  \\ / \r
   |  |  | |___    |___ /~~\\ | \\| |__/    \\__/ |       |  | \\__/  |  | /~~\\ | \\| |  |   |  \r
 `,options:[{text:"enter",shortText:"a",clear:!0,setState:()=>1},{text:"quit",shortText:"q",clear:!1,setState:()=>(K.clear(),K.writeData(`YOU CAN'T LEAVE\r
-`),1)}]},{id:1,text:`Welcome to the Land of Humanity! As you walk through the gate, you see a little girl, standing under a replica of the statue of liberty, eerily warning you\r
+`),1)}]},{id:1,text:`Welcome to the Land of Humanity! As you walk through the gate and past the Immigrant's gift shop (Buy American Flags, Apple Pie, Hot Dogs, English Books!), you see a little girl standing under a replica of the statue of liberty, which has the familiar poem "The New Colossus" by Emma Lazarus carved on it. In contrast to the positive tone of this poem, the little girl eerily warns you\r
+
+
 
     Prospective Immigrants Please Note
     Either you will
@@ -41,8 +43,10 @@ WARNING: This link could potentially be dangerous`)){const s=window.open();if(s)
     The door itself makes no promises.
     It is only a door.
 
+    - Adrienne Rich
+
 Do you still want to enter?\r
-`,options:[{text:"enter",shortText:"a",clear:!0,setState:()=>2}]},{id:2,text:`Concerned, you move on. As you approach a building in the distance, you hear rumbling, not unlike thunder. Drawing near to this building, you make out the words on the sign "RIP VAN WINKLE TAVERN". You move into the Rip Van Winkle Tavern which is unsettlingly quiet yet full of giant people, all staring at you. A large hand offers you a tankard of something alcoholic.
+`,options:[{text:"enter",shortText:"a",clear:!0,setState:()=>2}]},{id:2,text:`Concerned, you move on. As you approach a building in the distance, you hear rumbling, not unlike thunder. Drawing near to this building, past Dame Van Winkle who is screaming at you to get out, you make out the words on the sign "RIP VAN WINKLE TAVERN". You move into the Rip Van Winkle Tavern which is unsettlingly quiet yet full of giant people, all staring at you. A large hand offers you a tankard of something alcoholic.
 
 Do you drink?
 `,options:[{text:"yes",shortText:"y",clear:!0,setState:()=>3},{text:"quit",shortText:"q",clear:!1,setState:()=>(K.clear(),K.writeData(`As you stumble out of the tavern, you pass out and wake up in your bed. The whole day is fuzzy and slowly disappears from your memory.
@@ -72,7 +76,7 @@ As a wave comes from the left, you find yourself gripping the wheel.
 In front of you, you see a massive neon-lit building with blaring music, full of people.
 At the door, a man dressed in a suit hands you a card
 
-"This has unlimited money in it. It'll pay for food, drinks, and entertainment, you just can't take it outside".
+"This has unlimited money in it. It'll pay for food, drinks, and entertainment, you just can't take it outside. You should check out the yellow car go cart races over there. If you are feeling lucky, you can go and talk to Wolfsheim over there and invest you hard earned money in some alcohol (as long as you don't tell the cops). And if you don't mind getting wet, you can check out Gatsby's pool!"
 Have fun!
 `,options:[{shortText:"c",text:"continue",clear:!0,setState:()=>10}]},{id:10,text:`You find your favorite game. The slot machines and swipe your card.
 `,options:[{shortText:"c",text:"continue",clear:!0,setState:()=>11}]},{id:11,text:"",state:{points:0},options:[{shortText:"s",text:"spin",clear:!1,setState:()=>{K.clear();let G=[[0,0,0],[0,0,0],[0,0,0]];for(let j=0;j<3;j++)for(let Z=0;Z<3;Z++)G[j][Z]=Math.floor(Math.random()*5+3);let z=0;for(let j of G)new Set(j).size===1&&(z+=10);for(let j=0;j<3;j++)K.writeData(`[${G[j][0]} | ${G[j][1]} | ${G[j][2]}]
@@ -82,19 +86,23 @@ You won ${z} points
 
 "Do you want to me to convert your ${te[11].state.points} points into cash and lose your money or do you want to keep your memories and continue?"
 `),12)}]},{id:12,text:"",options:[{clear:!0,text:"Keep memories and continue",shortText:"k",setState:()=>13},{shortText:"t",text:"Take the Money",clear:!1,setState:()=>(K.clear(),K.writeData(`You wake up with $${te[11].state.points*.01} in your pocket`),K.writeData(`Something doesn't feel right in your gut...
-`),-1)}]},{id:13,text:`"Thank you for choosing your memories over monetary profit", a voice echoes from above, "The choice of morality over personal gain is one that humans struggle with, and you made the noble choice my friend." Looking up, you realize it is Ralph Waldo Emmerson Himself. 
+`),-1)}]},{id:13,text:`"Thank you for choosing your memories over monetary profit", a voice echoes from above, "The choice of morality over personal gain is one that humans struggle with, and you made the noble choice my friend. According to Manaavi Singh, 'People got excited about both things and events. But they tended to feel more positive about experiential purchases, and their feelings about material purchases were more likely to be tinged with feelings of impatience.'" Looking up, you realize it is Walt Whitman Himself. 
 
-"To finish the moment, to find the journey's end in every step of the road, to live the greatest number of good hours, is wisdom."
+"Ralph Waldo Emmerson said it best 'To finish the moment, to find the journey's end in every step of the road, to live the greatest number of good hours, is wisdom.'"
 
 Welcome to the Land of Speech. Perhaps one of the most vital aspects of modern human rights is free speech. Here we analyze the importance of free speech and its opponents.
 Would you care to go on a stroll with me?
-`,options:[{text:"yes",shortText:"y",setState:()=>14,clear:!0}]},{id:14,text:`As you strolled with Emmerson through the American country side. He explained his view on individualism to you.
+`,options:[{text:"yes",shortText:"y",setState:()=>14,clear:!0}]},{id:14,text:`As you strolled with Whitman through the American country side. He explained his view on individualism to you.
 
-“It is easy in the world to live after the world's opinion; it is easy in solitude after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.”
+“Emmerson also said 'It is easy in the world to live after the world's opinion; it is easy in solitude after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.'”
 
 In other words, maintain your own opinions and always struggle to seperate yourself from the masses. There is no good in having the crowd take
-control of your opinions."
-`,options:[{text:"yes",shortText:"y",setState:()=>15,clear:!0}]},{id:15,text:`You bid farewell to Emmerson and continue down your path to meet Langston Hughes in a house surrounded by a white picket fence,
+control of your opinions.
+
+"Instead, live in nature and appreciate yourself."
+
+
+`,options:[{text:"yes",shortText:"y",setState:()=>15,clear:!0}]},{id:15,text:`You bid farewell to Whitman and continue down your path to meet Langston Hughes in a house surrounded by a white picket fence,
 with a chicken in a pan, and plenty of people inside. To your surprise, Langston Hughes was excluded from the table.
 
 "Why?", you ask Hughes.
